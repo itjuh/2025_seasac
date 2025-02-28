@@ -1,0 +1,43 @@
+종근당 클론코딩
+1. 사이트
+https://ckdcos.com/?srsltid=AfmBOopSCUKNqxZ4uy3Ny_AvQCUJc6_cgFCqM8IButdVCWYewuCeiL0Q
+
+2. 피그마 페이지
+https://www.figma.com/design/FYucMBJEQclOVZYDQ63OAi/%ED%8D%BC%EB%B8%94%EB%A6%AC%EC%8B%B1%ED%8E%98%EC%9D%B4%EC%A7%80%EC%97%B0%EC%8A%B5?node-id=0-1&t=oFef3VpoV4rOFarc-1
+
+자동줄바꿈
+alt z
+
+이미지를 스프라이트를 사용하는 이유
+1. 이미지를 한장만 로딩하기때문에 로딩속도가 빠름
+2. 로고는 백그라운드로 가져옮
+3. 글자크기는 0 색상도 transparent
+4. 글자는 또는 text-intend: -9999px; 클리핑기법 사용 
+=> 이작업으로 배경을 넣어도 리더기가 읽음
+
+그래프나 스와이프배너는 플러그인 씀
+chart js
+swiper
+
+pc는 24*24만 넘으면 되모
+
+
+https://jsonplaceholder.typicode.com/guide/
+제이슨데이터 테스트
+
+border: 1px solid transparent로 주면 됨
+
+baseline을 맞출 수 있음
+
+기본 css에서도 하위를 찾아갈 수 있음
+
+비디오 불러오기 2개
+1. 유튜브 비디오 가져오기
+2. 비디오를 삽입시키기 1)video src 2) video>source =>페이지가 무거워짐
+
+비트버킷도 깃허브처럼 올릴 수 있음
+
+깃허브 시작하기
+1. git init 깃파일 스테이지 영역 만들기
+2. git add . 언스테이징 파일 스테이지에 올리기 U -> A상태됨
+3. 

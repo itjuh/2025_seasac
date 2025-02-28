@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 600px;
+            height: 100px;
+            display: flex;
+            background-color: #666;
+            margin-top: 50px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .box:nth-child(1){
+            background-color: tomato;
+        }
+        .box:nth-child(2){
+            background-color: cornflowerblue;
+        }
+        .box:nth-child(3){
+            background-color: lightseagreen;
+        }
+        .wrap1>div:nth-child(1){
+            flex-grow:2;
+        }
+        .wrap1>div:nth-child(2){
+            flex-grow:1;
+        }
+        .wrap1>div:nth-child(3){
+            flex-grow:1;
+        }
+        .wrap4 > div{
+            width: 400px;
+        }
+        .wrap4 > div:nth-child(1){
+            flex-shrink: 3;
+        }
+        .wrap4 > div:nth-child(2){
+            flex-shrink: 1;
+        }
+        .wrap4 > div:nth-child(3){
+            flex-shrink: 1;
+        }
+        .wrap3 > .box{
+            width: 300px;
+        }
+        .wrap3>.box:nth-child(1){
+            flex-shrink: 2;
+        }
+        .wrap3>.box:nth-child(2){
+            flex-shrink: 1;
+        }
+        .wrap3>.box:nth-child(3){
+            flex-shrink: 1;
+        }
+        
+        dt{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        dl>dd:nth-of-type(1){
+            color: rgb(34, 196, 188);
+            font-weight: bold;
+        }
+        .wrap5 > .box{
+            flex: 0 1 150px;
+            width: 200px;
+            /* basis가 더 우선순위 높음 */
+        }
+        a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section class="part">
+        <h2>2.플렉스 박스의 자식박스에 넣는 css를 연습</h2>
+        <a href="./3_1_flex.html">부모박스연습 바로가기</a>
+        <dl>
+            <dt>flex-self</dt>
+            <dd>flex-direction property</dd>
+            <dd>하나의 위치값을 바꿈</dd>
+
+        </dl>
+        <dl>
+            <dt>order</dt>
+            <dd>number</dd>
+            <dd>정렬의 순서를 바꿈</dd>
+        </dl>
+        <dl>
+            <dt>flex-basis</dt>
+            <dd>auto* / number or percent</dd>
+            <dd>flex자식의 크기를 지정하는 속성</dd>
+            <dd>width와 유사하나 우선순위가 높음</dd>
+            <dd>auto는 hug와 같음</dd>
+        </dl>
+        <dl>
+            <dt>flex-grow : 전체값에 남은부분의 비율로 나눠가지는 속성</dt>
+            <dd> 0* / number</dd>
+            <dd>커질래? 그래서 0이면 안늘어나는구나</dd>
+            <dd>원래크기+남은값을 grow값 비율로 나눠서 가짐</dd>
+            <br>
+            <dd><b>600px의 부모에 100px box를 2:1:1 flex-grow하는 경우</b></dd>
+            <dd>box:nth-child(1) 100+(300/4)*2=250px</dd>
+            <dd>box:nth-child(2)+nth-child(3) 100+(300/4)*1=175px</dd>
+        </dl>
+        <dl>
+            <dt>flex-shrink : 전체가 넘친 값에서 비율을 버리는 속성</dt>
+            <dd> 1* / number</dd>
+            <dd>작아질래?</dd>
+            <dd>원래크기-넘친값을 shrink값 비율로 나누어서 뺌</dd>
+            <br>
+            <dd><b>600px의 부모에 400px의 박스를 3:1:1:로 flex-shrink하는 경우</b></dd>
+            <dd>1: 400 - (300/5)*3 = 40px</dd>
+            <dd>2,3: 400 - (300/5)*1 = 280px</dd>
+        </dl>
+        <dl>
+            <dt>flex : 축약형</dt>
+            <dd>auto (0 1 auto)</dd>
+            <dd>flex-grow / flex-shrink / flex-basis</dd>
+            <dd>flex : none 0 0 auto </dd>
+            <dd>flex : initial 0 1 auto</dd>
+            <dd>flex : auto 1 1 auto</dd>
+        </dl>
+    </section>
+    <section class="part">
+        <div class="wrap wrap1">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="wrap wrap2">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="wrap wrap3">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="wrap wrap4">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="wrap wrap5">
+            <div class="box">박스</div>
+            <div class="box">박스 박스</div>
+            <div class="box">박스</div>
+        </div>
+    </section>
+</body>
+</html>

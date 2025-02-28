@@ -1,0 +1,46 @@
+position
+static* / fixec / relative / absolute / sticky
+
+left right bottom top속성은 position이 있어야함
+z-index는 포지션이 있어야 적용 됨, 숫자가 크면 위
+
+position: fixed / absolute - margin:auto적용 안됨
+
+relative 자리를 보존
+absolute / fixed / sticky 다 자리를 잃음
+
+sticky는 붙는 특성
+top left right bottom중에 하나는 있어야함
+
+transform
+rotate(deg)
+transform(px,px)
+skew(기울기)
+scale(소수점)
+
+transition
+transition-property : 속성
+transition-duration : 동작시간
+transition-delay : 지연시간
+transition-timing-function : 큐빅베지어
+
+border-radius
+
+box-shadow
+inset x-offset y-offset blur color
+
+text-shadow
+inset x-offset y-offset blur color
+
+web-font
+@font-face
+구글폰트를 쓰면 느려짐 CDN으로 쓰지 않음 폴더에 포함하는게 좋음
+두께별로 파일이 분리되어있는 경우는 static방식
+요즘은 variable로 해서 여러가지 두께가 존재함, 가변폰트 하나의 파일에 집약
+
+ttf는 용량이 web open font fommat으로 변환해서 그걸사용함
+
+link는 html로 리소스를 불러들이는 방법
+@import는 css안으로 불러오는 방법
+
+CDN code delivery network 

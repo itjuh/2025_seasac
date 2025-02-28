@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header,.footer{
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+        .main-visual{
+            height: 500px;
+            background-color: rgb(62, 95, 158);
+        }
+        .main-visual>h2{
+            display: none;
+        }
+        .main{
+            background-color: #ccc;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .inner{
+            width: 960px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+        }
+        .inner>div{
+            width: 307px;
+            height: 400px;
+        }
+        .inner>div:nth-child(1){
+            background-color: lightcyan;
+        }
+        .inner>div:nth-child(2){
+            background-color: lightseagreen;
+        }
+        .inner>div:nth-child(3){
+            background-color: rgb(32, 178, 93);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header"></header>
+        <section class="main-visual"><h2>비주얼영역</h2></section>
+        <main class="main">
+            <div class="inner">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            color: inherit;
+            /* color상속값 */
+            text-decoration: none;
+        }
+        /* 개별스타일 */
+        #gnb{
+            margin: 50px auto;
+            width: 1200px;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+        ul{
+            display: flex;
+            justify-content:space-around;
+        }
+        a:hover{
+            background-color: #ccc;
+        }
+    </style>
+  </head>
+  <body>
+    <nav id="gnb">
+      <ul>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">SKINCARE</a></li>
+        <li><a href="#">MAKE-UP</a></li>
+        <li><a href="#">SUNCARE</a></li>
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">REVIEW</a></li>
+        <li><a href="#">RANKING</a></li>
+        <li><a href="#">ENVENT</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

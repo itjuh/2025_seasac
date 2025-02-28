@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* legend {
+        display: none;
+      }
+      fieldset {
+        border: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <form action="./result.html" method="get">
+      <fieldset>
+        <!-- fieldset 공간에 범례를 주는 것이 필수임 -->
+        <legend>회원정보</legend>
+        <div>
+          <label for="userId">아이디</label>
+          <input type="text" id="userId" name="userId" placeholder="아이디를 입력하세요" autocomplete="on" />
+        </div>
+        <div>
+          <label for="userPw">비밀번호</label>
+          <input type="password" id="userPw" name="userPw" placeholder="비밀번호를 입력하세요" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>개인정보</legend>
+        <div>
+          <label for="userName">이름</label>
+          <input type="text" name="userName" id="userName" placeholder="이름" />
+        </div>
+        <div>
+          <label for="userBirth">생년월일</label>
+          <input type="text" name="userBirth" id="userBirth" maxlength="8" placeholder="8자리 ex)19990101" />
+        </div>
+        <div>
+          <label for="userEmail">이메일</label>
+          <input type="email" id="userEmail" placeholder="이메일을 입력하세요" />
+        </div>
+        <div>
+          <select name="" id="">
+            <option value="" selected>통신사선택</option>
+            <option value="skt">skt</option>
+            <option value="kt">kt</option>
+            <option value="lg">lg</option>
+          </select>
+          <label for="userTell">핸드폰 번호</label>
+          <input type="tel" id="userTel" placeholder="전화번호를 입력하세요" />
+        </div>
+      </fieldset>
+      <div><input type="radio" name="gender" id="man" />남자 <input type="radio" name="gender" id="woman" />여자</div>
+      <div><input type="radio" name="nation" id="local" />내국인 <input type="radio" name="nation" id="foreigner" />외국인</div>
+      <div>
+        <input type="checkbox" id="agree1" name="agree" />개인정보 수집동의 <input type="checkbox" id="agree2" name="agree" />이용 약관동의
+        <input type="checkbox" id="agree3" name="agree" />통신사 이용약관 동의 <input type="checkbox" id="agree4" name="agree" />고유
+        식별정보 동의
+      </div>
+      <fieldset>
+        <legend>전송버튼</legend>
+        <input type="submit" value="가입하기" />
+        <input type="reset" value="다시입력" />
+        <input type="button" value="기본버튼" />
+        <button>열기</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
