@@ -71,7 +71,7 @@ body {
   width: 140px;
   height: 55px;
   margin-right: 108px;
-  background: url(../assets/logo.png);
+  background: url(/clone_coding/assets/logo.png);
 }
 .gnb {
   display: flex;
@@ -147,7 +147,7 @@ body {
 .nav-btn {
   width: 27px;
   height: 44px;
-  background: url(../assets/navprev.png) no-repeat 0 2px / cover;
+  background: url(/clone_coding/assets/navprev.png) no-repeat 0 2px / cover;
   border: none;
   text-indent: -9999px;
   font-size: 0;
@@ -159,7 +159,7 @@ body {
   left: 28px;
 }
 .btn-next.nav-btn {
-  background-image: url(../assets/navnext.png);
+  background-image: url(/clone_coding/assets/navnext.png);
   background-position: 0 -3px;
   background-size: 104%;
   left: auto;
@@ -173,7 +173,7 @@ body {
 .product-2 {
   height: 800px;
   background-color: #fff;
-  background: url(../assets/product2_img.png) no-repeat top left/cover;
+  background: url(/clone_coding/assets/product2_img.png) no-repeat top left/cover;
   margin-bottom: 100px;
 }
 .product-2 span {
@@ -267,7 +267,7 @@ body {
 .link-banner {
   margin-top: 148px;
   height: 578px;
-  background: url(../assets/link_banner.png) no-repeat center center/cover;
+  background: url(/clone_coding/assets/link_banner.png) no-repeat center center/cover;
 }
 .video-box {
   padding: 140px 0 100px;
@@ -391,7 +391,7 @@ video {
         height: 40px;
         text-indent: -9999px;
         background-color: #ccc;
-        background: url(../assets/delivery_icon.png) no-repeat center/cover;
+        background: url(/clone_coding/assets/assets/delivery_icon.png) no-repeat center/cover;
       }
       > a {
         display: flex;
@@ -412,7 +412,7 @@ video {
       width: 32px;
       height: 32px;
       overflow: hidden;
-      background: url(../assets/icon_splits.png) no-repeat -1px -1px / 106px;
+      background: url(/clone_coding/assets/assets/icon_splits.png) no-repeat -1px -1px / 106px;
     }
     .icon-title {
       font-size: 11px;
@@ -476,13 +476,13 @@ video {
         height: 29px;
     }
     li:nth-child(1) a{
-        background: url(../assets/footer_icon1.png) no-repeat center/29px;
+        background: url(/clone_coding/assets/assets/footer_icon1.png) no-repeat center/29px;
     }
     li:nth-child(2) a{
-        background: url(../assets/footer_icon2.png) no-repeat center/29px;
+        background: url(/clone_coding/assets/assets/footer_icon2.png) no-repeat center/29px;
     }
     li:nth-child(3) a{
-        background: url(../assets/footer_icon3.png) no-repeat center/29px;
+        background: url(/clone_coding/assets/assets/footer_icon3.png) no-repeat center/29px;
     }
   }
 }
