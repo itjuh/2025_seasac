@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #a {
+        width: 50%;
+        height: 300px;
+        background-color: #000;
+      }
+      #a1 {
+        width: 50%;
+        height: 100px;
+        background-color: green;
+      }
+      #b {
+        /* max-width: 00이하 min-width: 00이상 */
+        width: 50%;
+        height: 300px;
+        min-width: 600px;
+        background-color: red;
+      }
+      #b1 {
+        width: 50vw;
+        height: 100px;
+        background-color: coral;
+      }
+      #c {
+        width: 50vw;
+        height: 300px;
+        /* 상대값이지만 브라우저 최상위하나를 기준으로 설정됨 스크롤바 포함 */
+      }
+      /* 
+        em : 상위 요소를 기준해서 상대적으로 나가는 단위
+        rem : root경로에서 상대적으로 나가는 단위
+        vw : 뷰포트 width기준
+        vh
+        */
+      #f {
+        font-size: 2em;
+        /* 기본 16px */
+      }
+      #f1 {
+        font-size: 1em;
+      }
+      #f2 {
+        font-size: 2em;
+      }
+      #f3{
+        font-size: 1rem;
+      }
+      .link-box{
+        font-size: .5em;
+      }
+      .link {
+        width: 18.75em;
+        height: 6.25em;
+        padding: 1.25em 2.5em;
+        background-color: cornflowerblue;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3.25em;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="link-box">
+        <div class="link">기준박스</div>
+    </a>
+    <div id="a">
+      <div id="a1"></div>
+    </div>
+    <div id="b">
+      <div id="b1"></div>
+    </div>
+    <div id="c"></div>
+    <div id="f">
+      폰트사이즈 테스트 2em : 16px*2 => 32px;
+      <div id="f1">
+        글자중첩1 1em : 32px(부모기준) *1 => 32px; 폰트를 상위기준 상속받음
+        <div id="f2">
+          글자중첩2
+          <div id="f3">
+            글자중첩3 1rem : 16px 부모기준 => 16px;
+            <div id="f4">글자중첩4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
